@@ -16,7 +16,7 @@
 title: Tower Builder
 
 # Logo image
-image: tb-logo.png
+image: logo-vih.png
 
 #Description of your site
 description: >-
@@ -60,7 +60,7 @@ graph:
   - contracts_format: "csv"
 
 # Customize the More information menu button title
-menu_button_title: More information
+menu_button_title: Más información
 
 # Customize the titles and placeholder inputs in Contracts page
 contracts_title: Contracts by companies

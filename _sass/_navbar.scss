@@ -1,14 +1,51 @@
+.navbar {
+    padding: 0 !important;
+}
+
 .navbar-brand {
     font-family: Lato;
     font-weight: bolder;
+    margin-left: 4vw;
 }
 
 .navbar-brand img {
-    width: 80px;
+    width: 100%;
     padding: 5px 20px 5px 0;
 }
 
-.line{
-    border-bottom: 2px solid;
-    border-color: $primary;
+.navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link.active {
+    color: rgba(0, 0, 0, 1);
+    font-weight: bold;
+}
+
+.navbar-nav {
+    margin-right: 4vw;
+}
+
+
+.nav-item {
+    text-transform: uppercase;
+    padding: 0 1vw;
+    position: relative;
+    font-weight: 600;
+}
+
+.nav-item a:hover {
+    font-weight: 600;
+}
+
+.nav-item a::before {
+    content: "";
+    margin: 0 auto;
+    border-bottom: 2px solid #cb2c30;
+    position: absolute;
+    bottom: 10px;
+    left: 35%;
+    right: 35%;
+    opacity: 0;
+}
+
+.nav-item a.hover::before,
+.nav-item a:hover::before {
+    opacity: 1;
 }

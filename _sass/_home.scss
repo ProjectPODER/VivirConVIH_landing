@@ -4,11 +4,7 @@
     height: auto;
     min-height: 35rem;
     padding: 10rem 0;
-    background: -webkit-gradient(linear,left top,left bottom,from(rgba(22,22,22,.1)),color-stop(75%,rgba(22,22,22,.5)),to(#161616)),url('#{$bgHome}');
-    background: linear-gradient(to bottom,rgba(22,22,22,.1) 0,rgba(22,22,22,.5) 75%,#161616 100%),url('#{$bgHome}');
-    background-position: top;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
+    background: url('#{$bgHome}') no-repeat 50% fixed;
     background-size: cover;
 
     h1 {
@@ -19,23 +15,17 @@
         font-family: Poppins,sans-serif;
         color: #1e1e1e;
     }
-    
-    h1,
-    p {
-        color: $white;
-    }
     p {
         font-size: 1.7rem;
+        font-weight: 500;
+        color: #5b5b5f;
     }
     a {
         @extend .btn;
         @extend .btn-primary;
         margin: 2rem 0.5rem 1rem 0.5rem;
+        font-size: 0.7em;
     }
-}
-
-.invisible-node {
-    opacity: 0;
 }
 
 @media (min-width: 992px) {

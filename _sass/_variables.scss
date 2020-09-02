@@ -3,8 +3,8 @@
 // Color system
 
 // stylelint-disable
-$white:    #fff !default;
-$gray-100: #f8f9fa !default;
+
+$gray-100: #d9dada !default;
 $gray-200: #e9ecef !default;
 $gray-300: #dee2e6 !default;
 $gray-400: #ced4da !default;
@@ -13,33 +13,43 @@ $gray-600: #6c757d !default;
 $gray-700: #495057 !default;
 $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
-$black:    #000 !default;
 
-$blue:    #007bff !default;
-$indigo:  #6610f2 !default;
-$purple:  #6f42c1 !default;
-$pink:    #e83e8c !default;
-$red:     #dc3545 !default;
-$orange:  #fd7e14 !default;
-$yellow:  #ffc107 !default;
-$green:   #007f8b !default;
-$teal:    #20c997 !default;
-$cyan:    #1491a5 !default;
+// Text colors
+$black:    #1e1e1e !default;
+$gray-text:#5b5b5f;   
 
-$primary:       $green !default;
-$secondary:     $gray-600 !default;
+// Primary colors
+$white:   #fff !default;
+$blue:    #009fae !default;
+$red:     #cb2c30 !default;
+
+// Complementary colors
+$gray-c:  #d9dada;
+$blue-c:  #7fcfd6;
+$red-c:   #de6669;
+$green:   #77ab59;
+$yellow:  #ffdc71;
+$orange:  #ffad60;
+
+// Background colors
+$bg-red:    #FBECED;
+$bg-blue:   #E4F5F6;
+$bg-gray:   #F4F4F4;
+$bg-navbar: #d9dada;
+
+
+
+$primary:       $blue !default;
+$secondary:     $red !default;
 $success:       $green !default;
-$info:          $cyan !default;
 $warning:       $yellow !default;
 $danger:        $red !default;
-$light:         $gray-100 !default;
-$dark:          $gray-800 !default;
 
 
 //Home background image
 //You need to change only the name and the type of your image
 //For example:./img/your-image.png 
-$bgHome : "./img/bg-masthead.jpg";
+$bgHome : "./img/bg-principal.png";
 
 
 // Links
@@ -69,4 +79,4 @@ $font-size-sm:                ($font-size-base * .875) !default;
 // Preloader colors
 $preloader-color1: #1ee6d3;
 $preloader-color2: #343a40;
-$preloader-color3: $primary;
+$preloader-color3: $red;

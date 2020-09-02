@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Home
+title: Inicio
 permalink: /
 ---
 
@@ -11,7 +11,6 @@ This won't be another paragraph, it will join the line above it.
 
 This will be another paragraph, as it has a blank line above it.
 
-[Website version](https://towerbuilder.projectpoder.org/)
-[Website iframe version](https://towerbuilder.projectpoder.org/?iframe)
-[Visualization iframe](https://towerbuilder.projectpoder.org/iframe-visualization/)
-[Slider iframe](https://towerbuilder.projectpoder.org/iframe-slider/)
+[Website iframe version](/?iframe)
+[Visualization iframe](/iframe-visualization/)
+[Slider iframe](/iframe-slider/)
