@@ -41,6 +41,14 @@
                                 <input type="text" id="search-dateTo" class="filter-input filter-input-to datepicker__input-container form-control" placeholder="{{site.date_range_to_placeholder}}">
                             </div>
                         </div>
+                        <div class="col-lg-3">
+                            <div class="form-group filter-box filter-country">
+                                <label class="filter-title">{{site.type_country_title}}</label>
+                                <select id="search-country" name="country" class="form-control" id="" class="filter-input">
+                                    <option value="todos">-{{site.type_country_all_option}}-</option>
+                                </select>
+                            </div>
+                        </div>
                         <div class="col-lg-12">
                             <p class="filter-footnote">{{site.filter_footnote_title}}</p>
 
