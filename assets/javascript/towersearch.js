@@ -38,7 +38,8 @@ function initSearch() {
         columnDefs: [
             { className: "dt-left", targets: [0] },
             { className: "dt-center", targets: [1] },
-            { className: "dt-right", targets: [2] }
+            { className: "dt-right", targets: [2] },
+            { className: "dt-left", targets: [3] }
         ],
         columns: [
             {
@@ -60,6 +61,12 @@ function initSearch() {
                 // render: function(data, type, row, meta) { return data.toFixed(2) },
                 render: $.fn.dataTable.render.number( ',', '.', 2, '$' ),
                 searchable: "false"
+            },
+            {
+                title: "{{site.column_4}}",
+                data: "country",
+                type: "string",
+                searchable: "false"
             }
         ],
         order: [[0, 'asc']]
@@ -69,12 +76,16 @@ function initSearch() {
 
     var contract_types = getContractTypes();
     var procedure_types = getProcedureTypes();
+    var countries = getCountries();
 
     contract_types.map( (type) => {
         if(type != '') { $('#search-contractType').append(new Option(type, type, false, false)) }
     } );
     procedure_types.map( (type) => {
         if(type != '') { $('#search-procedureType').append(new Option(type, type, false, false)) }
+    } );
+    countries.map( (country) => {
+        if(country != '') { $('#search-country').append(new Option(country, country, false, false)) }
     } );
 
     $('#contracts_search tbody').on( 'click', 'td', function() {
@@ -94,7 +105,7 @@ function initSearch() {
     $('#search-fromAmount, #search-toAmount, #search-text').keyup( function() {
         table.draw();
     } );
-    $('#search-dateFrom, #search-dateTo, #search-contractType, #search-procedureType').on( 'change', function() {
+    $('#search-dateFrom, #search-dateTo, #search-contractType, #search-procedureType, #search-country').on( 'change', function() {
         table.draw();
     } );
 
@@ -118,8 +129,11 @@ function initSearch() {
             // Filtro de tipo de contrato
             var contractType = $('#search-contractType').val();
 
-            // Filtro de tipo de contrato
+            // Filtro de tipo de procedimiento de contratación
             var procedureType = $('#search-procedureType').val();
+
+            // Filtro de país
+            var country = $('#search-country').val();
 
             var data = table.row(dataIndex).data();
             var org_name = data.name;
@@ -176,6 +190,12 @@ function initSearch() {
                     return false;
                 }
 
+                // Filtro de país
+                if(country != 'todos' && country != contract.country) {
+                    hiddenContracts.push(contract.ocid + '_' + contract.start_date);
+                    return false;
+                }
+
                 return true;
             } );
 
@@ -207,6 +227,14 @@ function getProcedureTypes() {
         if(types.indexOf(contract.procedure_type) < 0) { types.push(contract.procedure_type) }
     } );
     return types;
+}
+
+function getCountries() {
+    var countries = [];
+    contracts_data.map( (contract) => {
+        if(countries.indexOf(contract.country) < 0) { countries.push(contract.country) }
+    } );
+    return countries;
 }
 
 function populateContracts( data ) {
@@ -427,7 +455,8 @@ function processContractFromCsv(row,orgs,orgs_index) {
       contractSuppliers.push({
           "_id": supplier,
           "id": supplier,
-          "simple": supplier
+          "simple": supplier,
+          "country": row.País
       });
   } );
 
@@ -441,7 +470,8 @@ function processContractFromCsv(row,orgs,orgs_index) {
               "currency": row.CONTRACT_CURRENCY,
               "suppliers": contractSuppliers,
               "start_date": row.CONTRACT_START_DATE,
-              "end_date": row.CONTRACT_END_DATE
+              "end_date": row.CONTRACT_END_DATE,
+              "country": row.País
           };
 
   contract.suppliers.map( (supplier) => {
@@ -454,6 +484,7 @@ function processContractFromCsv(row,orgs,orgs_index) {
       else {
           var supplierObj = orgObject(supplier);
 
+          if(contract.hasOwnProperty('country')) supplierObj.country = contract.country;
           supplierObj.contracts_count += 1;
           supplierObj.contracts_amount += contract.amount;
           supplierObj.contracts.push(contractOrgObject(contract));
@@ -546,7 +577,8 @@ function orgObject(supplier) {
         "shareholders_ids": [],
         "shareholders": [],
         "board_ids": [],
-        "board": []
+        "board": [],
+        "country": ''
     }
 
     return supplierObj;
@@ -562,7 +594,8 @@ function contractOrgObject(contract) {
         "amount": contract.amount,
         "currency": contract.currency,
         "start_date": contract.start_date,
-        "end_date": contract.end_date
+        "end_date": contract.end_date,
+        "country": contract.country
     }
 
     return contractOrgObj;

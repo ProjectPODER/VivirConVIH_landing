@@ -79,11 +79,14 @@ date_range_title: Date range
 date_range_from_placeholder: From
 date_range_to_placeholder: to
 date_range_title_tooltip: Find active contracts between two dates.
+type_country_title: Country
+type_country_all_option: All
 filter_footnote_title: Apply filters on contracts with companies.
 # Customize the Contract table titles
 column_1: Companies
 column_2: No. of contracts
 column_3: Total amount
+column_4: Country
 
 # Build settings
 plugins:
