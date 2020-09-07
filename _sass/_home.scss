@@ -6,11 +6,8 @@
     padding: 10rem 0;
     background: url('#{$bgHome}') no-repeat 50% fixed;
     background-size: cover;
-
-    .bolivia {
-        background: url('#{$bgHomeBolivia}') no-repeat 50% fixed;
-    }
-
+    
+    
     h1 {
         font-size: 60px;
         line-height: 65px;
@@ -30,6 +27,10 @@
         margin: 2rem 0.5rem 1rem 0.5rem;
         font-size: 0.7em;
     }
+}
+
+.bolivia {
+    background: url('#{$bgHomeBolivia}') no-repeat 50% fixed !important;
 }
 
 @media (min-width: 992px) {
