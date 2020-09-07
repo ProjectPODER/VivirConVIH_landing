@@ -7,6 +7,10 @@
     background: url('#{$bgHome}') no-repeat 50% fixed;
     background-size: cover;
 
+    .bolivia {
+        background: url('#{$bgHomeBolivia}') no-repeat 50% fixed;
+    }
+
     h1 {
         font-size: 60px;
         line-height: 65px;
