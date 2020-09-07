@@ -32,6 +32,21 @@
 .bolivia {
     background: url('#{$bgHomeBolivia}') no-repeat 50% fixed !important;
 }
+.costarica {
+    background: url('#{$bgHomeCostaRica}') no-repeat 50% fixed !important;
+}
+.ecuador {
+    background: url('#{$bgHomeEcuador}') no-repeat 50% fixed !important;
+}
+.guatemala {
+    background: url('#{$bgHomeGuatemala}') no-repeat 50% fixed !important;
+}
+.mexico {
+    background: url('#{$bgHomeMexico}') no-repeat 50% fixed !important;
+}
+.peru {
+    background: url('#{$bgHomePeru}') no-repeat 50% fixed !important;
+}
 
 @media (min-width: 992px) {
     .home-content {
