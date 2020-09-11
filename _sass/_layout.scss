@@ -30,3 +30,12 @@ a {
     transition: all .35s;
     word-wrap: break-word;
 }
+
+.complement-bg {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 35rem;
+    background: url('#{$complementBg}') no-repeat 50% fixed;
+    background-size: cover;
+}
