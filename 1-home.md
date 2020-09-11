@@ -4,13 +4,15 @@ title: Inicio
 permalink: /
 ---
 
-# VIVIR CON VIH LANDING
+# Perú: compras de antirretrovirales con sobreprecio y entregas a destiempo
 
-This text is a paragraph.
-This won't be another paragraph, it will join the line above it.
+{:.arrow-down}
+![Scroll]({{ site.baseurl }}/assets/img/arrow-down.svg)
 
-This will be another paragraph, as it has a blank line above it.
+Uno de los pilares para que el tratamiento con antirretrovirales tenga éxito es que los pacientes con VIH lo cumplan con disciplina y constancia. Sin embargo, en Perú esto es imposible para muchos porque sus medicinas no llegan a tiempo, se las entregan de manera fraccionada o, incluso, con fechas vencidas.
 
-[Website iframe version](/?iframe)
-[Visualization iframe](/iframe-visualization/)
-[Slider iframe](/iframe-slider/)
+
+[Reportaje](/?iframe)
+[Entrevista](/iframe-visualization/)
+[Testimonios](/iframe-slider/)
+[Contratos](/iframe-slider/)

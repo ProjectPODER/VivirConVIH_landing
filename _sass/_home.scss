@@ -1,13 +1,11 @@
-.home-content {
+.illustration-bg {
     position: relative;
     width: 100%;
-    height: auto;
+    height: 100%;
     min-height: 35rem;
-    padding: 10rem 0;
-    background: url('#{$bgHome}') no-repeat 50% fixed;
-    background-size: cover;
-    
-    
+    padding-top: 48px !important;
+    background: url('#{$bgHomePeru}') center 48px no-repeat scroll;
+    background-size: 100%;
     h1 {
         font-size: 60px;
         line-height: 65px;
@@ -16,18 +14,58 @@
         font-family: Poppins,sans-serif;
         // color: #1e1e1e;
         color: #ffffff;
+        text-shadow: #49043F 6px 5px 1px;
+    }
+}
+.arrow-down {
+    width: 30px;
+    margin: auto;
+    margin-top: -30px;
+    margin-bottom: 3rem;
+}
+.main-content {
+    position: relative;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    h1 {
+        font-size: 50px;
+        line-height: 55px;
+        margin: 0 1vw 2rem 1vw;
+        font-weight: bolder;
+        font-family: Poppins,sans-serif;
+        color: #1e1e1e;
+        // color: #ffffff;
+        // text-shadow: $blue 2px 2px 1px;
     }
     p {
         font-size: 1.7rem;
         font-weight: 500;
-        // color: #5b5b5f;
-        color: #ffffff;
+        color: #5b5b5f;
+        // color: #ffffff;
     }
     a {
         @extend .btn;
         @extend .btn-primary;
         margin: 2rem 0.5rem 1rem 0.5rem;
-        font-size: 0.7em;
+        font-size: 1rem;
+    }
+    // .illustration {
+    //     // -webkit-box-shadow: 2px 1px 10px 2px rgba(158,158,158,0.8);
+    //     // -moz-box-shadow: 2px 1px 10px 2px rgba(158,158,158,0.8);
+    //     // box-shadow: 2px 1px 10px 2px rgba(158,158,158,0.8);
+    //     -webkit-box-shadow: 20px 20px 0px 0px rgba(228,245,246,1);
+    //     -moz-box-shadow: 20px 20px 0px 0px rgba(228,245,246,1);
+    //     box-shadow: 20px 20px 0px 0px rgba(228,245,246,1);
+    // }
+    .bg-blue {
+        background-color: $bg-blue;
+        opacity: 0.9;
+    }
+    .rounded {
+        border-radius: 1rem !important;
+    }
+    .bg-padding {
+        padding: 2rem 1rem 0.7rem;
     }
 }
 
@@ -50,22 +88,56 @@
     background: url('#{$bgHomePeru}') no-repeat 50% fixed !important;
 }
 
+.main-square-blue {
+    position: absolute;
+    // left: auto;
+    top: -128%;
+    right: -26%;
+    bottom: auto;
+    display: block;
+    width: 90%;
+    height: 85%;
+    border-radius: 54px;
+    background-color: $bg-blue;
+    -webkit-transform: rotate(-23deg);
+    -ms-transform: rotate(-23deg);
+    transform: rotate(-23deg);
+}
+
+.second-square-blue {
+    position: absolute;
+    top: 40%;
+    right: 90%;
+    width: 80%;
+    height: 85%;
+    border-radius: 54px;
+    background-color: $bg-blue;
+    -webkit-transform: rotate(-22deg);
+    -ms-transform: rotate(-22deg);
+    transform: rotate(-32deg);
+}
+
 @media (min-width: 992px) {
-    .home-content {
+    .illustration-bg {
         height: 100vh;
         padding: 0;
     }
 }
 
-@media (max-width: 767px) {
-    .home-content {
+@media (max-width: 768px) {
+    .main-content {
 
         h1 {
-            font-size: 60px;
-            line-height: 65px;
+            font-size: 30px;
+            line-height: 35px;
         }
         p {
-            font-size: 1.4rem;
+            font-size: 1.2rem;
         }
+    }
+    .arrow-down {
+        width: 20px;
+        margin-top: -25px;
+        margin-bottom: 1rem;
     }
 }
