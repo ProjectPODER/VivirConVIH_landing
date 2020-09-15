@@ -3,7 +3,8 @@
 
   {%- include head.html -%}
 
-  <body class="complement-bg">
+  <body class="{% if page.title == "Inicio" %}illustration-bg bolivia{%- else -%}complement-bg{% endif %}">
+    
     {%- include header.html -%}
 
     {{ content }}
