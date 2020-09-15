@@ -4,15 +4,14 @@ title: Inicio
 permalink: /
 ---
 
-# Perú: compras de antirretrovirales con sobreprecio y entregas a destiempo
+# Vivir con VIH
 
 {:.arrow-down}
 ![Scroll]({{ site.baseurl }}/assets/img/arrow-down.svg)
 
-Uno de los pilares para que el tratamiento con antirretrovirales tenga éxito es que los pacientes con VIH lo cumplan con disciplina y constancia. Sin embargo, en Perú esto es imposible para muchos porque sus medicinas no llegan a tiempo, se las entregan de manera fraccionada o, incluso, con fechas vencidas.
+Tan sólo 1,3 millones de las 2,1 millones de personas que fueron diagnosticadas como portadoras del  VIH en América Latina tienen acceso a tratamiento. Esta situación se está agravando por la nueva pandemia global de la covid-19 según el análisis y reporteo realizado por PODER y Salud con Lupa.
 
 
-[Reportaje](/?iframe)
-[Entrevista](/iframe-visualization/)
-[Testimonios](/iframe-slider/)
-[Contratos](/iframe-slider/)
+[Países analizados](/)
+[Conclusiones del proyecto](/)
+[Informe contratación ARV](/)
