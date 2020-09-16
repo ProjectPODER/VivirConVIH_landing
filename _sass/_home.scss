@@ -4,7 +4,7 @@
     height: 100%;
     min-height: 35rem;
     padding-top: 48px !important;
-    background: url('#{$bgHome}') center 48px no-repeat fixed;
+    background: url('#{$bgHomeBolivia}') center 48px no-repeat fixed;
     background-size: 100% !important;
 }
 .arrow-down {
@@ -27,7 +27,7 @@
     p {
         font-size: 1.7rem;
         font-weight: 500;
-        color: #5b5b5f;
+        color: #515155;
     }
     a {
         @extend .btn;
@@ -37,7 +37,7 @@
     }
     .bg-blue {
         background-color: $bg-blue;
-        opacity: 0.9;
+        opacity: 0.75;
     }
     .rounded {
         border-radius: 1rem !important;
@@ -109,6 +109,15 @@
     transform: rotate(-32deg);
 }
 
+
+@media (max-width: 1440px) {
+    .main-content {
+        .bg-padding {
+            margin-top: 40% !important;
+        }
+    }
+}
+
 @media (min-width: 992px) {
     .illustration-bg {
         height: 100vh;
@@ -126,26 +135,12 @@
         p {
             font-size: 1.2rem;
         }
+        .bg-padding {
+            margin-top: 65% !important;
+        }
     }
     .arrow-down {
         width: 20px;
         margin-top: -25px;
-        margin-bottom: 1rem;
-    }
-}
-
-@media (max-width: 1440px) {
-    .main-content {
-        .bg-padding {
-            margin-top: 40% !important;
-        }
-    }
-}
-
-@media (max-width: 1200px) {
-    .main-content {
-        .bg-padding {
-            margin-top: 30% !important;
-        }
     }
 }
