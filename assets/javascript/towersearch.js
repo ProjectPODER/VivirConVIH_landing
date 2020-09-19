@@ -453,9 +453,9 @@ function processContractFromCsv(row,orgs,orgs_index) {
   var suppliers = row.SUPPLIER_NAMES.split(';');
   suppliers.map( (supplier) => {
       contractSuppliers.push({
-          "_id": supplier,
-          "id": supplier,
-          "simple": supplier,
+          "_id": supplier.trim(),
+          "id": supplier.trim(),
+          "simple": supplier.trim(),
           "country": row.País
       });
   } );
@@ -476,7 +476,7 @@ function processContractFromCsv(row,orgs,orgs_index) {
 
   contract.suppliers.map( (supplier) => {
       var orgIndex = findOrg(supplier.id, orgs_index);
-      if(orgIndex > 0) {
+      if(orgIndex >= 0) {
           orgs[orgIndex].contracts_count += 1;
           orgs[orgIndex].contracts_amount += contract.amount;
           orgs[orgIndex].contracts.push(contractOrgObject(contract));
