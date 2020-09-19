@@ -4,7 +4,7 @@
     height: 100%;
     min-height: 35rem;
     padding-top: 48px !important;
-    background: url('#{$bgHomeBolivia}') center 48px no-repeat fixed;
+    background: url('#{$bgHome}') center 48px no-repeat fixed;
     background-size: 100% !important;
 }
 .arrow-down {
@@ -12,6 +12,7 @@
     margin: auto;
     margin-top: -30px;
 }
+
 .main-content {
     position: relative;
     // padding-top: 5rem;
@@ -45,6 +46,21 @@
     .bg-padding {
         padding: 2rem 1rem 0.7rem;
     }
+}
+
+.landing-main-content {
+    h1,
+    p {
+        color: #ffffff;
+    }
+    .landing-text {
+        padding-top: 38%;
+    }
+}
+section.landing,
+section#contracts_page_landing {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
 }
 
 .bolivia {
@@ -109,6 +125,99 @@
     transform: rotate(-32deg);
 }
 
+.bg-white {
+    background-color: #ffffff;
+}
+
+.bg-gray {
+    background-color: $bg-gray;
+}
+
+.text-blue {
+    color: $blue;
+}
+
+.text-red {
+    color: $red;
+}
+
+.bg-red {
+    background-color: $bg-red;
+}
+.bg-gray {
+    background-color: $bg-gray;
+}
+
+.bg-black{
+    background-color: $gray-900;
+}
+.rounded {
+    border-radius: 1rem !important;
+}
+.bg-padding {
+    padding: 2rem 1rem;
+}
+
+.conclutions-card {
+    border: 0;
+    border-bottom: 6px solid;
+}
+.card-red {
+    border-color: $red;
+}
+.card-blue {
+    border-color: $blue;
+}
+.card-gray {
+    border-color: $bg-navbar;
+}
+
+.card-deck {
+    .number{
+        font-weight: bold;
+        font-size: 1.5rem;
+        margin-bottom: 0;
+    }
+}
+
+.card-testimonials {
+    padding: 15px 5px;
+}
+
+.card-person-title {
+    color: $gray-text;
+    font-style: italic;
+}
+
+.card-interview {
+    -webkit-box-shadow: 1px 1px 15px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 1px 1px 15px 0px rgba(0,0,0,0.2);
+    box-shadow: 1px 1px 15px 0px rgba(0,0,0,0.2);
+    border: transparent;
+    width: 100%;
+}
+
+.flag {
+    height: 30px;
+}
+
+.footer{
+    padding: 3rem 1rem;
+    .image-1{
+        width: 100px;
+    }
+    .image-2{
+        width: 100px;
+    }
+    .footer-text{
+        color: #ffffff;
+        font-weight: bold;
+        margin-bottom: 1rem;
+    }
+}
+// .about-project-list {
+//     list-style: none;
+// }
 
 @media (max-width: 1440px) {
     .main-content {
@@ -119,7 +228,8 @@
 }
 
 @media (min-width: 992px) {
-    .illustration-bg {
+    .illustration-bg,
+    .landing-main-content {
         height: 100vh;
         padding: 0;
     }

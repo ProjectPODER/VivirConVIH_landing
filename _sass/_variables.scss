@@ -49,7 +49,7 @@ $danger:        $red !default;
 //Home background image
 //You need to change only the name and the type of your image
 //For example:./img/your-image.png 
-$bgHome: "./img/bg-principal.png";
+$bgHome: "./img/PORTADA-ARTEFINAL.jpg";
 $bgHomeBolivia: "./img/BOLIVIA.jpg";
 $bgHomeCostaRica: "./img/COSTARICA.jpg";
 $bgHomeEcuador: "./img/ECUADOR.jpg";
@@ -63,7 +63,7 @@ $complementBg: "./img/complement-bg.png";
 //
 // Style anchor elements.
 
-$link-color:                $primary !default;
+$link-color:                $red !default;
 $link-decoration:           none !default;
 $link-hover-color:          darken($link-color, 15%) !default;
 $link-hover-decoration:     underline !default;
