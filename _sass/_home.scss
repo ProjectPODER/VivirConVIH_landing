@@ -4,7 +4,7 @@
     height: 100%;
     min-height: 35rem;
     padding-top: 48px !important;
-    background: url('#{$bgHome}') center 48px no-repeat fixed;
+    background: url('#{$bgHome}') center top no-repeat fixed;
     background-size: 100% !important;
 }
 .arrow-down {
@@ -64,22 +64,22 @@ section#contracts_page_landing {
 }
 
 .bolivia {
-    background: url('#{$bgHomeBolivia}') center 48px no-repeat fixed;
+    background: url('#{$bgHomeBolivia}') center top no-repeat fixed;
 }
 .costarica {
-    background: url('#{$bgHomeCostaRica}') center 48px no-repeat fixed;
+    background: url('#{$bgHomeCostaRica}') center top no-repeat fixed;
 }
 .ecuador {
-    background: url('#{$bgHomeEcuador}') center 48px no-repeat fixed;
+    background: url('#{$bgHomeEcuador}') center top no-repeat fixed;
 }
 .guatemala {
-    background: url('#{$bgHomeGuatemala}') center 48px no-repeat fixed;
+    background: url('#{$bgHomeGuatemala}') center top no-repeat fixed;
 }
 .mexico {
-    background: url('#{$bgHomeMexico}') center 48px no-repeat fixed;
+    background: url('#{$bgHomeMexico}') center top no-repeat fixed;
 }
 .peru {
-    background: url('#{$bgHomePeru}') center 48px no-repeat fixed;
+    background: url('#{$bgHomePeru}') center top no-repeat fixed;
 }
 
 .main-square-blue {
@@ -215,9 +215,10 @@ section#contracts_page_landing {
         margin-bottom: 1rem;
     }
 }
-// .about-project-list {
-//     list-style: none;
-// }
+.about-project-list {
+    list-style: none;
+    padding-left: 0;
+}
 
 @media (max-width: 1440px) {
     .main-content {

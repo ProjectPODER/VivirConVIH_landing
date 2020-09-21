@@ -12,3 +12,6 @@ Tan sólo 1,3 millones de las 2,1 millones de personas que fueron diagnosticadas
 [Países analizados](/)
 [Conclusiones del proyecto](/)
 [Informe contratación ARV](/)
+
+{:.arrow-down}
+![Scroll](https://vivirconvih.org/assets/img/arrow-down.svg)

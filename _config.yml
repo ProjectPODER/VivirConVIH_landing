@@ -62,7 +62,7 @@ graph:
 menu_button_title: Más información
 
 # Customize the titles and placeholder inputs in Contracts page
-contracts_title: Contratos por empresas 2017-2019
+contracts_title: Buscador de compras 2017-2019
 search_title: Búsqueda
 search_placeholder: Introduce palabra clave a buscar
 amount_title: Monto total (en USD)
