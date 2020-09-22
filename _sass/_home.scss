@@ -34,7 +34,9 @@
         @extend .btn;
         @extend .btn-primary;
         margin: 2rem 0.5rem 1rem 0.5rem;
-        font-size: 1rem;
+        font-size: 1.3rem;
+        border-width: 2px;        
+        
     }
     .bg-blue {
         background-color: rgba(228, 245, 246, 0.75);
