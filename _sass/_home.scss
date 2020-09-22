@@ -146,6 +146,9 @@ section#contracts_page_landing {
     background: url('./img/complement-bg.png') center no-repeat scroll;
     background-size: cover !important;
 }
+.square-bg-blue-fixed {
+    background-attachment: fixed !important;
+}
 .square-bg-red {
     position: relative;
     width: 100%;
