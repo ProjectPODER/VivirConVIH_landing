@@ -55,7 +55,7 @@
     }
     p {
         color: #ffffff;
-        text-shadow: #49043F 2px 2px 1px;
+        text-shadow: #49043F 2px 2px 3px;
         a {
             text-shadow:  none;
         }
@@ -178,6 +178,10 @@ section#contracts_page_landing {
     color: $red;
 }
 
+.text-black {
+    color: $black;
+}
+
 .bg-red {
     background-color: $bg-red;
 }
@@ -292,3 +296,9 @@ section#contracts_page_landing {
         margin-top: -25px;
     }
 }
+
+// @media (max-width: 576px) {
+//     .pl-5, .pr-5 {
+//         padding-left: 1rem !important;
+//     }
+// }
