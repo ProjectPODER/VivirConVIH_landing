@@ -70,5 +70,8 @@ $(document).ready(function () {
         autocollapse('#nav',50); 
     });
 
+    $(".formatNumber").each(function(b,e) {
+        $(e).text(parseFloat($(e).text().replace(",","")).toLocaleString(navigator.language))
+    })
 
 });

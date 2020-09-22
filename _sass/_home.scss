@@ -5,7 +5,7 @@
     min-height: 35rem;
     padding-top: 48px !important;
     background: url('#{$bgHome}') center top no-repeat fixed;
-    background-size: 100% !important;
+    background-size: cover !important;
 }
 .arrow-down {
     width: 30px;
@@ -49,12 +49,19 @@
 }
 
 .landing-main-content {
-    h1,
+    h1{
+        color: #ffffff;
+        text-shadow: #49043F 4px 3px 1px;
+    }
     p {
         color: #ffffff;
+        text-shadow: #49043F 2px 2px 1px;
+        a {
+            text-shadow:  none;
+        }
     }
     .landing-text {
-        padding-top: 38%;
+        padding-top: 34%;
     }
 }
 section.landing,
@@ -132,6 +139,36 @@ section#contracts_page_landing {
 .bg-gray {
     background-color: $bg-gray;
 }
+
+.square-bg-blue {
+    position: relative;
+    width: 100%;
+    background: url('./img/complement-bg.png') center no-repeat scroll;
+    background-size: cover !important;
+}
+.square-bg-red {
+    position: relative;
+    width: 100%;
+    background: url('./img/complement-bg2.png') center no-repeat scroll;
+    background-size: cover !important;
+}
+.square-bg-blue2 {
+    position: relative;
+    width: 100%;
+    background: url('./img/complement-bg3.png') center no-repeat scroll;
+    background-size: cover !important;
+}
+.circle-bg-red,
+.circle-bg-red-right {
+    position: relative;
+    width: 100%;
+    background: url('./img/circlered1.png') left no-repeat scroll;
+    background-size: 25% !important;
+}
+.circle-bg-red-right {
+    background: url('./img/circlered1.png') right no-repeat scroll;
+}
+
 
 .text-blue {
     color: $blue;
